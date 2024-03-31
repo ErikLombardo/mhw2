@@ -5,12 +5,13 @@
 }
 
 article {
-    
+   
     display: flex;
     flex-direction: column;
+   
 }
 section {
-
+    flex-grow:1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,6 +278,16 @@ footer {
 }
 
 
+#input_barra{
+    position:absolute;
+    left:70px;
+    font-size: 0.9em;
+    right:110px;
+    flex-grow:1;
+    flex-basis:100%;
+    
+}
+
 
 @media (max-width:500px) {
 
@@ -343,7 +354,7 @@ footer {
     
 
     .opzionisingole {
-
+       
         position: static;
         font-size: 1.3em;
         white-space: nowrap;
@@ -380,18 +391,25 @@ footer {
         }
 
     #dentro_ricerca {
-        
+        font-size:0.8em;
        position:absolute;
         bottom:10%;
-        left:initial;
-        right:initial;
-        padding: 13px;
+        left:30px;
+        right:30px;
+        bottom:20px;
+        padding:15px;
         padding-left:130px;
         padding-right:130px;
         border-radius: 44px;
         font-weight: 500;
         background-color: limegreen;
         
+    }
+
+    #input_barra {
+        top: 10%;
+        left: 50px;
+        right: 30px;
     }
 
     #inizio {
@@ -441,6 +459,6 @@ footer {
    }
 
   
-   
+  
 
     }

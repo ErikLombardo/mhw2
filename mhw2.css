@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-size: 19px;
+}
+
+article {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+section {
+  margin-top:25px;
+    width:1200px;
+   
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo img {
+    height: 170px;
+    position: relative;
+    right: 415px;
+    top: 1px;
+}
+
+
+#opzioni img {
+    height: 7vh;
+}
+
+
+#titolo {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: 430px;
+    font-size: 38px;
+}
+
+#container_accesso {
+    position: relative;
+    left: 405px;
+}
+
+#accesso {
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+
+#container_barra {
+    position: absolute;
+    right: auto;
+    left: auto;
+}
+
+
+.elementi_barra {
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+    border-radius: 15px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+navbar {
+   margin-top:100px;
+    position:relative;
+    right:300px;
+    border-radius: 30px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    navbar img {
+        height: 40px;
+      
+    }
+
+    navbar input {
+        width:440px;
+        font-size:0.8em;
+
+    }
+
+
+    #aggiungi img{
+     position:relative;
+     height:100px;
+     top:60px;
+     left:320px;
+    }
+
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 200px;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: end;
+}
+
+.cellulare {
+    margin-right: 80px;
+}
+
+.centra{
+    display:flex; 
+   
+    width:100%;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.NewAllenatore{
+    margin-top:20px;
+    border-style:solid;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    max-height:350px;
+    min-height:350px;
+   
+    width:100%;
+
+}
+
+.NewAllenatore img{
+    border-style:ridge groove;
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:auto;
+    min-height:200px;
+    min-width:200px;
+    max-width:200px;
+    max-height:200px;
+
+}
+.contatta{
+    position:absolute;
+    right:20px;
+    top:20px;
+
+
+}
+.intestazione {
+    position: absolute;
+   
+    top: 10px;
+    right: 90px;
+    left: 220px;
+    min-height:40px;
+    max-height:40px;
+    
+}
+
+.nomeallenatore {
+   font-size:1.4em;
+   font-weight:bold;
+
+
+}
+
+.discipline{
+    position:absolute;
+    top:50px;
+    right:10px;
+    left:220px;
+    min-height:30px;
+    max-height:30px;
+    
+
+}
+
+.disciplineallenatore{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+.descrizione{
+   
+    position:absolute;
+    top:90px;
+    left:10px;
+    left:220px;
+    right:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height:250px;
+    max-height:250px;
+
+}
+
+.tariffe{
+  
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    top: 220px;
+    right: 990px;
+
+}
+
+.cadenza{
+    font-style:italic;
+    
+
+}
+
+.tariffa{
+    font-style:italic;
+    font-weight:bolder;
+
+}
+@media (max-width:500px) {
+    body {
+        margin: 0;
+        font-size: 19px;
+    }
+
+    header {
+        height: 92px;
+        width: 100%;
+    }
+
+
+    #container_barra {
+        display: none;
+    }
+
+
+    #titolo {
+        color: white;
+        font-weight: bold;
+        position: static;
+    }
+
+    #logo img {
+        position: static;
+        height: 209px;
+        margin-right: -20px;
+    }
+
+
+    #container_accesso {
+        display: none;
+    }
+
+
+
+
+
+  
+
+
+
+
+}
