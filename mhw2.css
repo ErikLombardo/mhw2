@@ -79,13 +79,18 @@ header {
     background-color: white;
 }
 
-
+.contattacell{
+    display:none;
+}
 #container_barra {
     position: absolute;
     right: auto;
     left: auto;
 }
 
+.show{
+    display:initial;
+}
 
 .elementi_barra {
     background-color: white;
@@ -298,6 +303,12 @@ footer {
     max-height: 200px;
 }
 
+
+.immaginedacaricare img{
+
+    width:100%;
+    height:100%;
+}
 #info{
     font-family:monospace;
     font-size:12px;
@@ -306,7 +317,7 @@ footer {
 .immaginedacaricare input[type="file"] {
 
     width:100%;
-   /* Nasconde il campo di input di tipo file */
+   
 }
 
 #delete input[type="image"] {
@@ -396,6 +407,27 @@ div.info span {
         font-size: 19px;
     }
 
+    article {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    section {
+        margin-top: 25px;
+        width: 1200px;
+        background-color: white;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    #aggiungi {
+        position: static;
+    }
+
     header {
         height: 92px;
         width: 100%;
@@ -413,6 +445,35 @@ div.info span {
         position: static;
     }
 
+    .centra {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aggiungi {
+        display: none;
+    }
+
+    navbar {
+        margin-top: 120px;
+        position: static;
+        border-radius: 30px;
+        display: flex;
+        height: 40px;
+        width: 90vw;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+        navbar input {
+            width: 83%;
+            font-size: 0.8em;
+        }
+
     #logo img {
         position: static;
         height: 209px;
@@ -426,11 +487,80 @@ div.info span {
 
 
 
+    .NewAllenatore {
+        width: 95%;
+    }
 
+    .NewAllenatore.withspace img{
+        min-height:140px;
+        max-height:140px;
+        min-width:140px;
+        max-width:140px;
 
-  
+    }
 
+    .descrizione{
 
+        left:10px;
+        right:10px;
+        top:170px;
+        overflow:auto;
+    }
 
+    .tariffe{
+        display:none;
+        position:absolute;
+        left:auto;
+        right:auto;
+        background-color:rebeccapurple;
+    }
 
+    .discipline {
+        top:130px;
+        left: 160px;
+        right:10px;
+        white-space:nowrap;
+        overflow:auto;
+    }
+    .intestazione {
+        left: 160px;
+        right:10px; 
+       
+        min-height: 120px;
+        max-height: 120px;
+        overflow:auto;
+    }
+
+    .contatta{
+        display:none;
+    }
+    .contattacell {
+        position: absolute;
+        display: initial;
+        top: 135px;
+        left: 10px;
+        right: initial;
+    }
+
+    div.info{
+    z-index:1;
+    position:relative;
+    right:initial;
+    }
+
+    div.info img{
+        position:absolute;
+        right:-42px;
+        top:-42px;
+        width:40px;
+        height:40px;
+
+    }
+
+    
 }
+
+
+
+
+

@@ -52,7 +52,7 @@ function NewTrainer(event) {
 	New.classList.add("NewAllenatore","withspace");
     New.innerHTML = `
                         <img src="immagini/who.png">
-                        <div class="intestazione"> <span class="nomeallenatore">${txt_intestazione.value} </span>  </div> <button class="contatta"> Contatta </button>
+                        <div class="intestazione"> <span class="nomeallenatore">${txt_intestazione.value} </span>  </div> <button class="contatta"> Contatta </button> <button class="contattacell"> Contatta </button>
                         <div class="discipline"> <span class="disciplineallenatore">${txt_discipline.value} </span></div>
                         <div class="descrizione">${txt_descrizione.value} </br> </div>
         <div class="tariffe">
@@ -79,7 +79,8 @@ function NewTrainer(event) {
 
     const nuovobottone = New.querySelector('.contatta');
     nuovobottone.addEventListener('click', ShowOrNotContact);
-        
+    const nuovobottonecell = New.querySelector('.contattacell');
+    nuovobottonecell.addEventListener('click', ShowModalContact);
 
     New.setAttribute("data-id", "last");
     var lastone = document.querySelector('[data-id="last"]');
@@ -93,3 +94,37 @@ function NewTrainer(event) {
 
 const submit = document.querySelector('#enter');
 submit.addEventListener('click', NewTrainer);
+
+
+function ShowModalContact(event) {
+    /*creo le copie altrimenti non riuscirei ad aprire il bottone contatta dal cell due volte di fila*/ 
+    let div = document.createElement('div');
+    let divprincipale = div.cloneNode(true);
+
+    divprincipale.classList.add('modal-view');
+    let info1 = event.target.closest('.NewAllenatore').querySelector('.info');
+    let info = info1.cloneNode(true);
+    info.classList.remove('hidden');
+    let img = document.createElement('img');
+    img.src = 'immagini/littlex.png';
+    img.addEventListener('click', chiudi);
+    info.appendChild(img);
+    divprincipale.appendChild(info);
+    divprincipale.setAttribute("data-id", "rimuovi");
+    let puntodoveaggiungere = event.target.closest('section');
+    puntodoveaggiungere.insertAdjacentElement("afterend", divprincipale);
+    
+}
+
+
+function chiudi(event){
+    let darimuovere = document.querySelector('[data-id="rimuovi"]');
+    darimuovere.remove();
+
+}
+const bottonicell = document.querySelectorAll('.contattacell');
+for (const singolobotton of bottonicell) {
+    singolobotton.addEventListener('click', ShowModalContact);
+}
+
+
