@@ -557,7 +557,26 @@ div.info span {
 
     }
 
-    
+
+
+
+    .modal-view {
+        position: fixed;
+        top:0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* devo ripeterlo altrimenti la modal view definita su cellulare sembra essere più specifica e non subisce hidden*/
+    .hidden{
+       display:none;
+
+    }
 }
 
 
